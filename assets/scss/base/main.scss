@@ -1,0 +1,37 @@
+//Settings, mixins + main layouts styling
+@import '_mixins.scss';
+@import '_variables.scss';
+
+body {
+    margin: 0;
+}
+h1, h2 {
+    font-family: $font-roboto;
+}
+
+p, li {
+    font-family: $font-roboto-mono;
+}
+
+.section-100 {
+    width: 100vw;
+}
+
+.section-85 {
+    width: 95vw;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.padding-64 {
+    padding: 64px 0;
+}
+
+@include desktop {
+
+    .section-85 {
+        width: 85vw;
+    }
+}

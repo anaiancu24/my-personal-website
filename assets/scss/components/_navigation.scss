@@ -1,0 +1,105 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.navigation {
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+
+    &--transparent {
+        background: rgba(255, 255, 255, 0.44);
+    }
+
+    &_wrapper {
+        height: 100%;
+    }
+
+    &_logo {
+        @include flex-between;
+        position: relative;
+        z-index:2
+    }
+
+    &_hamburger {
+        display: block;
+    }
+
+    &_menu {
+        list-style: none;
+        background: rgba(255, 255, 255, 0.44);;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -7px;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.8s;
+        -moz-transition: max-height 0.8s;
+        transition: max-height 0.8s;
+
+
+        &.active {
+            max-height: 250px;
+        }
+
+        &-item {
+            font-size: $font-size-16;
+            color: white;
+            padding: 1rem 0;
+        }
+    }
+}
+
+@include desktop {
+
+    .navigation {
+        height: 86px;
+        
+        &_wrapper {
+            @include flex-between;
+        }
+
+        &_hamburger {
+            display:none;
+        }
+    
+        &_menu {
+            display: block;
+            top: 0;
+            @include flex-between;
+            width: 700px;
+            background: none;
+            overflow: visible;
+
+            &-item {
+                color: $bottle-green;
+                font-size: $font-size-20;
+                cursor: pointer;
+
+                &:last-child {
+                    @include cta($mountain-meadow, white);
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: relative;
+                    top: 27px;
+                    width: 0;
+                    height: 3px;
+                    background: $mountain-meadow;
+                    transition: width .3s;
+                }
+
+                &:hover:after {
+                    width:100%;
+                }
+            }
+        }
+    } 
+}
