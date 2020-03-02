@@ -1,8 +1,42 @@
+@import '../base/mixins';
+@import '../base/variables';
+
 .header {
     position: absolute;
-    top: 0;
+    background: url('/images/hero.png') no-repeat;
+    background-size: cover;
+    height: 50%;
 
-    &_image {
-        width:100%;
+    &_text {
+        position: relative;
+        top: 120px;
+        color:white;
+    }
+
+    &_title {
+        font-size: $font-size-28;
+    }
+
+    &_name {
+        font-size: $font-size-18;
+    }
+}
+
+@include desktop {
+
+    .header {
+        height: 100%;
+
+        &_text {
+            top: 270px;
+        }
+
+        &_title {
+            font-size: $font-size-64;
+        }
+    
+        &_name {
+            font-size: $font-size-48;
+        }
     }
 }

@@ -5,11 +5,11 @@
 body {
     margin: 0;
 }
-h1, h2 {
-    font-family: $font-roboto;
-}
+// h1, h2 {
+//     font-family: $font-roboto;
+// }
 
-p, li {
+h1, h2, p, li {
     font-family: $font-roboto-mono;
 }
 
@@ -27,6 +27,11 @@ p, li {
 
 .padding-64 {
     padding: 64px 0;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
 }
 
 @include desktop {
