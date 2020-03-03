@@ -21,6 +21,10 @@ h1, h2, p, li {
     width: 95vw;
 }
 
+.section_50-50 {
+    @include flex-between;
+}
+
 .center {
     margin: 0 auto;
 }

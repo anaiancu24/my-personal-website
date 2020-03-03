@@ -46,7 +46,11 @@
         &-item {
             font-size: $font-size-16;
             color: white;
-            padding: 1rem 0;
+            margin: 1rem 2rem;
+
+            &:last-child {
+                @include cta($mountain-meadow, white);
+            }
         }
     }
 }
@@ -78,7 +82,7 @@
                 cursor: pointer;
 
                 &:last-child {
-                    @include cta($mountain-meadow, white);
+                    margin: 0;
 
                     &::after {
                         display: none;
