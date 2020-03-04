@@ -5,12 +5,29 @@
 body {
     margin: 0;
 }
-// h1, h2 {
-//     font-family: $font-roboto;
-// }
+h3 {
+    font-family: $font-roboto;
+}
 
 h1, h2, p, li {
     font-family: $font-roboto-mono;
+}
+
+h1 {
+    font-size: $font-size-28;
+}
+
+h2 {
+    font-size: $font-size-20;
+}
+
+h3 {
+    font-size: $font-size-28;
+}
+
+p {
+    font-size: $font-size-16;
+    line-height: 1.75;
 }
 
 .section-100 {
@@ -18,11 +35,7 @@ h1, h2, p, li {
 }
 
 .section-85 {
-    width: 95vw;
-}
-
-.section_50-50 {
-    @include flex-between;
+    width: 85vw;
 }
 
 .center {
@@ -40,7 +53,24 @@ h1, h2, p, li {
 
 @include desktop {
 
-    .section-85 {
-        width: 85vw;
+    h1 {
+        font-size: $font-size-64;
+    }
+    
+    h2 {
+        font-size: $font-size-48;
+    }
+    
+    h3 {
+        font-size: $font-size-36;
+    }
+
+    p {
+        font-size: $font-size-18;
+        line-height: 1.75;
+    }
+
+    .section_50-50 {
+        @include flex-between;
     }
 }

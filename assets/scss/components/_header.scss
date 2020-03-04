@@ -2,42 +2,29 @@
 @import '../base/variables';
 
 .header {
-    position: absolute;
+    position: relative;
+    top: -50px;
     background: url('/images/hero.png') no-repeat;
     background-size: cover;
-    height: 50%;
+    background-position-x: -200px;
+    height: 600px;
 
     &_text {
         position: relative;
-        top: 120px;
+        top: 220px;
         color:white;
-    }
-
-    &_title {
-        font-size: $font-size-28;
-    }
-
-    &_name {
-        font-size: $font-size-18;
     }
 }
 
 @include desktop {
 
     .header {
-        height: 100%;
-        position: relative;
+        top: -86px;
+        height: 1200px;
+        background-position-x: 0;
 
         &_text {
-            top: 270px;
-        }
-
-        &_title {
-            font-size: $font-size-64;
-        }
-    
-        &_name {
-            font-size: $font-size-48;
+            top: 370px;
         }
     }
 }

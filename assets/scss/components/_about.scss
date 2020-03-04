@@ -1,2 +1,30 @@
 @import '../base/mixins';
 @import '../base/variables';
+
+.section_50-50 {
+
+    &_right {
+
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@include desktop {
+
+    .section_50-50 {
+
+        &_left {
+            text-align: left;
+            max-width: 700px;
+        }
+
+        &_right {
+
+            img {
+                width: 700px;
+            }
+        }
+    }
+}
