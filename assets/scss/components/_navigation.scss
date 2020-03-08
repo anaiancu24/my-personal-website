@@ -5,7 +5,7 @@
     position: fixed;
     top:0;
     z-index: 1;
-    height: 50px;
+    height: 65px;
 
     &--transparent {
         background: rgba(255, 255, 255, 0.44);
@@ -16,9 +16,13 @@
     }
 
     &_logo {
-        @include flex-between;
+        @include flex(space-between, center);
         position: relative;
-        z-index:2
+        z-index:2;
+        
+        &-svg {
+            width: 120px;
+        }
     }
 
     &_hamburger {
@@ -62,7 +66,7 @@
         height: 86px;
         
         &_wrapper {
-            @include flex-between;
+            @include flex(space-between, center);
         }
 
         &_hamburger {
@@ -72,7 +76,7 @@
         &_menu {
             display: block;
             top: 0;
-            @include flex-between;
+            @include flex(space-between, center);
             width: 700px;
             background: none;
             overflow: visible;

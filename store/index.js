@@ -2,18 +2,18 @@ export const state = () => ({
     submenuState: true,
     cardsInfo: [
       {
-        title: 'Title 1',
-        image: '/',
-        imageAlt: 'image1',
-        listItems: ['1','2','3','4'],
-        skillItems: ['1','2','3','4','5','6','7','8']
+        title: 'Hard Skills',
+        image: 'illustration_skills1.svg',
+        imageAlt: 'web-developer',
+        listItems: ['Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this'],
+        skillItems: ['HTML', 'CSS', 'SASS', 'Javascript', 'Vue.js', 'React.js', 'PHP', 'SQL', 'Node.js', 'REST API']
       },
       {
-        title: 'Title 2',
-        image: '/',
-        imageAlt: 'image2',
-        listItems: ['5','6','7','8'],
-        skillItems: ['9','10','11','12','13','14','15','16']
+        title: 'Soft skills',
+        image: '/static/images/illustration_skills2.svg',
+        imageAlt: 'web-designer',
+        listItems: ['Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this'],
+        skillItems: ['HTML', 'CSS', 'SASS', 'Javascript']
       }
     ]
   })

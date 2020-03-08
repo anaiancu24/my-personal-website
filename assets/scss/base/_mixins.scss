@@ -4,10 +4,10 @@
     }
 }
 
-@mixin flex-between {
+@mixin flex ($justify, $align) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 @mixin cta($bg, $color){
