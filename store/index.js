@@ -15,7 +15,8 @@ export const state = () => ({
         listItems: ['Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this', 'Just some dummy text here, you’re not supposed to read this'],
         skillItems: ['HTML', 'CSS', 'SASS', 'Javascript']
       }
-    ]
+    ],
+    websites: ['portofolio_website1.png', 'portofolio_website2.png', 'portofolio_website3.png']
   })
   
   export const mutations = {

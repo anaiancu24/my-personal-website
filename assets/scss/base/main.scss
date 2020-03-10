@@ -9,7 +9,7 @@ h3, h4 {
     font-family: $font-roboto;
 }
 
-h1, h2, p, li {
+h1, h2, p, li, button {
     font-family: $font-roboto-mono;
 }
 
@@ -25,13 +25,18 @@ h4 {
     font-size: $font-size-24;
 }
 
-p {
+p, a {
     font-size: $font-size-16;
     line-height: 1.75;
 }
 
 li {
     font-size: $font-size-16; 
+}
+
+button {
+    border: none;
+    font-size: $font-size-24; 
 }
 
 .section-100 {
@@ -54,6 +59,9 @@ li {
 .center {
     text-align: center;
     margin: 0 auto;
+}
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 @include desktop {
