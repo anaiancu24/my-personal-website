@@ -1,5 +1,5 @@
 <template>
-  <nav class="navigation navigation--transparent section-100">
+  <nav ref="nav" class="navigation navigation--transparent section-100">
     <div class="navigation_wrapper section-85 center">
       <div class="navigation_logo">
         <img class="navigation_logo-svg" src="@/static/images/logo.svg" alt="logo" />
@@ -27,7 +27,7 @@
         <li class="navigation_menu-item">Home</li>
         <li class="navigation_menu-item">Portofolio</li>
         <li class="navigation_menu-item">Trainings</li>
-        <li class="navigation_menu-item">Talk to me</li>
+        <li class="navigation_menu-item"><nuxt-link :to="`/contact`"> Talk to me</nuxt-link></li>
       </ul>
     </div>
   </nav>
@@ -41,8 +41,25 @@ export default {
     showNav() {
       this.$store.commit('toggle')
       this.$refs.navigation_menu.classList.toggle("active");
+    },
+    changeNav() {
+      if (window.scrollY > 830) {
+        this.$refs.nav.classList.add("scroll");
+      } else {
+        this.$refs.nav.classList.remove("scroll");
+      }
     }
-  }
+  },
+created () {
+    if (process.browser) { 
+        window.addEventListener('scroll', this.changeNav);
+    }
+},
+destroyed () {
+    if (process.browser) { 
+        window.removeEventListener('scroll', this.changeNav);
+    }
+}
 };
 </script>
 <style lang="scss">

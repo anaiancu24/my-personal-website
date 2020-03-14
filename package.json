@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "simple-lightbox": "^2.1.0"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
