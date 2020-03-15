@@ -12,7 +12,7 @@
       </div>
       <div class="footer-wrapper-social">
           <span>Follow me on social</span><br><br>
-        <a href="https://www.linkedin.com/company/1377702/" target="_blank" class="icon linkedin">
+        <a href="https://www.linkedin.com/in/anaiancu" target="_blank" class="icon linkedin">
           <svg
             version="1.1"
             id="linkedin"
@@ -39,7 +39,7 @@
             </g>
           </svg>
         </a>
-        <a href="https://instagram.com/evboxglobal/" target="_blank" class="icon instagram">
+        <a href="https://instagram.com/ana.intech/" target="_blank" class="icon instagram">
           <svg
             version="1.1"
             id="instagram"
@@ -73,7 +73,7 @@
             </g>
           </svg>
         </a>
-        <a
+        <!-- <a
           href="https://www.youtube.com/channel/UCxch2CGz8QT9fGT7Sr70gRg"
           target="_blank"
           class="icon youtube"
@@ -99,8 +99,8 @@
               />
             </g>
           </svg>
-        </a>
-        <a href="https://github.com/anaiulia" class="icon github">
+        </a> -->
+        <a href="https://github.com/anaiancu24" class="icon github">
           <svg
             version="1.1"
             id="github"

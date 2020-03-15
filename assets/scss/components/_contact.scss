@@ -1,0 +1,60 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.contact-wrapper {
+    @include flex(space-evenly, center);
+    position: relative;
+    min-height: 1000px;
+
+    .contact-form {
+        flex-basis: 30%;
+        padding: 2rem 1rem;
+        box-shadow: -1px 2px 17px -6px rgba(151,152,153,0.7);
+        border-radius: 8px;  
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 2rem;
+
+            label {
+                margin-bottom: 1rem;
+            }
+
+            input, textarea {
+                width: 93%;
+                height: 38px;
+                padding: 0 1rem;
+                color: $grey-medium;
+                font-size: $font-size-16;
+                outline:none;
+                border: 1px solid $grey-light;
+                border-radius: 8px;
+            }
+
+            textarea {
+                height: 160px;
+                padding: 1rem;
+            }
+        }
+        .submit-button {
+            width: 93%;
+            background: $mountain-meadow;
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+
+            button {
+                background: none;
+            }
+
+            &:hover {
+                background: $mountain-meadow-hover;
+            }
+        }
+    }
+
+    .contact-text {
+        flex-basis: 30%;
+        text-align: left;
+    }
+}
