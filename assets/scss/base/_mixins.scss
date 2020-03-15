@@ -1,0 +1,36 @@
+@mixin desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+}
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin cta($bg, $color){
+    color: $color;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, $bg, #40e495, #30dd8a, $bg);
+    border-radius: 16px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

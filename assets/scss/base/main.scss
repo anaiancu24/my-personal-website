@@ -1,0 +1,107 @@
+//Settings, mixins + main layouts styling
+@import '_mixins.scss';
+@import '_variables.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+h3, h4 {
+    color: $grey-dark;
+}
+
+p, li {
+    color: $grey-medium;
+}
+body {
+    margin: 0;
+}
+h3, h4 {
+    font-family: $font-roboto;
+}
+
+h1, h2, p, li, a, button, label {
+    font-family: $font-roboto-mono;
+}
+
+h1 {
+    font-size: $font-size-36;
+}
+
+h2, h3 {
+    font-size: $font-size-28;
+}
+
+h4 {
+    font-size: $font-size-24;
+}
+
+p, a {
+    font-size: $font-size-16;
+    line-height: 1.75;
+}
+
+li {
+    font-size: $font-size-16; 
+}
+
+button {
+    border: none;
+    font-size: $font-size-24; 
+}
+
+.section-100 {
+    width: 100vw;
+}
+
+.section-85 {
+    width: 85vw;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.padding-64 {
+    padding: 64px 0;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+@include desktop {
+
+    h1 {
+        font-size: $font-size-64;
+    }
+    
+    h2 {
+        font-size: $font-size-48;
+    }
+    
+    h3 {
+        font-size: $font-size-36;
+    }
+
+    h4 {
+        font-size: $font-size-28;
+    }
+
+    p {
+        font-size: $font-size-18;
+        line-height: 2;
+    }
+
+    li {
+        font-size: $font-size-18;  
+    }
+
+    .section_50-50 {
+        @include flex(space-between, center);
+    }
+}

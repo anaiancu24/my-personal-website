@@ -1,0 +1,34 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.footer {
+
+    &-wrapper {
+        @include flex(space-between, normal);
+        background-color: $grey-dark;
+        padding: 2rem 5rem;
+
+        a ,p, span {
+            color: white;
+            text-decoration: none;
+            font-size: $font-size-16;
+        }
+
+        &-social {
+            a {
+                margin-right:1rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &-copyright-wrapper {
+        background-color: $grey-light;
+
+        p {
+            margin: 0;
+            padding: 1rem 0;
+        }
+    }
+    
+}
