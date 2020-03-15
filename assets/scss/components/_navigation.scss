@@ -1,0 +1,129 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.navigation {
+    position: fixed;
+    top:0;
+    z-index: 1;
+    height: 65px;
+
+    &--transparent {
+        background-color: rgba(255, 255, 255, 0.44);
+        transition: background-color 0.4s ease-out;
+    }
+    &.scroll {
+        background-color: white;
+        box-shadow: 0 2px 12px 0 #e2eaf6;
+    }
+
+    &_wrapper {
+        height: 100%;
+    }
+
+    &_logo {
+        @include flex(space-between, center);
+        position: relative;
+        z-index:2;
+        
+        &-svg {
+            width: 120px;
+        }
+    }
+
+    &_hamburger {
+        display: block;
+    }
+
+    &_menu {
+        list-style: none;
+        background: rgba(255, 255, 255, 0.44);;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -7px;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.8s;
+        -moz-transition: max-height 0.8s;
+        transition: max-height 0.8s;
+
+
+        &.active {
+            max-height: 250px;
+        }
+
+        &-item {
+            margin: 1rem 2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: $font-size-20;
+            }
+
+            &:last-child {
+                @include cta($cornflower-blue, white);
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+
+    .navigation {
+        height: 86px;
+        
+        &_wrapper {
+            @include flex(space-between, center);
+        }
+
+        &_hamburger {
+            display:none;
+        }
+    
+        &_menu {
+            display: block;
+            top: 0;
+            @include flex(space-between, center);
+            width: 550px;
+            background: none;
+            overflow: visible;
+
+            &-item {
+                cursor: pointer;
+
+                a {
+                    color: $bottle-green;
+                }
+
+                &:last-child {
+                    margin: 0;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: relative;
+                    top: 24px;
+                    width: 0;
+                    height: 4px;
+                    background: $mountain-meadow;
+                    transition: width .3s;
+                }
+
+                &:hover:after {
+                    width:100%;
+                }
+            }
+        }
+    } 
+}

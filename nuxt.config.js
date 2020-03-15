@@ -23,12 +23,17 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/base/main.scss',
+    '@/assets/scss/base/_variables.scss',
+    '@/assets/scss/base/_mixins.scss'
+
   ],
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+ plugins: [
+  {src: '~/plugins/Vuelidate'}
+],
   /*
   ** Nuxt.js dev-modules
   */
@@ -38,6 +43,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+
   ],
   /*
   ** Build configuration

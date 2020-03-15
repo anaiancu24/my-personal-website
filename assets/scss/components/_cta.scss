@@ -1,0 +1,10 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.call-to-action {
+
+    &_button {
+        @include cta($cornflower-blue, white);
+        padding: 2rem 3rem;
+    }
+}
