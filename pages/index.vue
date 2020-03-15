@@ -6,6 +6,7 @@
     <Skills />
     <CTA />
     <Portofolio />
+    <CTA />
     <Footer />
   </div>
 

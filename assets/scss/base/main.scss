@@ -2,6 +2,16 @@
 @import '_mixins.scss';
 @import '_variables.scss';
 
+html {
+    scroll-behavior: smooth;
+}
+h3, h4 {
+    color: $grey-dark;
+}
+
+p, li {
+    color: $grey-medium;
+}
 body {
     margin: 0;
 }

@@ -24,9 +24,9 @@
         </div>
       </div>
       <ul ref="navigation_menu" class="navigation_menu">
-        <li class="navigation_menu-item">Home</li>
-        <li class="navigation_menu-item">Portofolio</li>
-        <li class="navigation_menu-item">Trainings</li>
+        <li class="navigation_menu-item"><nuxt-link :to="`/`">Home</nuxt-link></li>
+        <li class="navigation_menu-item"><nuxt-link :to="`/#portofolio`">Portofolio</nuxt-link></li>
+        <!-- <li class="navigation_menu-item">Trainings</li> -->
         <li class="navigation_menu-item"><nuxt-link :to="`/contact`"> Talk to me</nuxt-link></li>
       </ul>
     </div>

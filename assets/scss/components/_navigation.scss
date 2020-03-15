@@ -53,17 +53,19 @@
         }
 
         &-item {
-            font-size: $font-size-16;
-            color: white;
             margin: 1rem 2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: $font-size-20;
+            }
 
             &:last-child {
                 @include cta($cornflower-blue, white);
 
                 a {
-                    text-decoration: none;
                     color: white;
-                    font-size: $font-size-20;
                 }
             }
         }
@@ -87,14 +89,16 @@
             display: block;
             top: 0;
             @include flex(space-between, center);
-            width: 700px;
+            width: 550px;
             background: none;
             overflow: visible;
 
             &-item {
-                color: $bottle-green;
-                font-size: $font-size-20;
                 cursor: pointer;
+
+                a {
+                    color: $bottle-green;
+                }
 
                 &:last-child {
                     margin: 0;
@@ -108,9 +112,9 @@
                     content: '';
                     display: block;
                     position: relative;
-                    top: 27px;
+                    top: 24px;
                     width: 0;
-                    height: 3px;
+                    height: 4px;
                     background: $mountain-meadow;
                     transition: width .3s;
                 }
