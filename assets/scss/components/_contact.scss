@@ -1,6 +1,9 @@
 @import '../base/mixins';
 @import '../base/variables';
 
+#contact {
+    background: $grey-dark;
+}
 .contact-wrapper {
     position: relative;
     min-height: 1000px;
@@ -9,7 +12,8 @@
     .contact-form {
         flex-basis: 30%;
         padding: 2rem 1rem;
-        box-shadow: -1px 2px 17px -6px rgba(151,152,153,0.7);
+        background: white;
+        box-shadow: -1px 2px 17px 5px rgba(151,152,153,0.7);
         border-radius: 8px;  
 
         .form-group {
@@ -42,7 +46,7 @@
             }
         }
         .submit-button {
-            width: 93%;
+            width: 90%;
             background: $mountain-meadow;
             border-radius: 8px;
             padding: 1rem;
@@ -61,6 +65,10 @@
     .contact-text {
         flex-basis: 30%;
         text-align: left;
+
+        h3, p {
+            color: white;
+        }
     }
 }
 
