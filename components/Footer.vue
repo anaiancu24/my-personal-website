@@ -7,7 +7,7 @@
         <a href>Contact</a>
         <p>
           Email:
-          <span>ana.iulia24@icloud.com</span>
+          <a href="mailto:ana.iulia24@icloud.com"><span>ana.iulia24@icloud.com</span></a>
         </p>
       </div>
       <div class="footer-wrapper-social">

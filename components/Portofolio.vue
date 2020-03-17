@@ -1,9 +1,9 @@
 <template>
   <div id="portofolio" class="portofolio section-100 padding-64 center">
-    <h3>Some work I've done</h3>
+    <h3>Portofolio</h3>
     <p
       class="mb-100"
-    >Short introduction about the work I'm presenting, from logo to intro to websites</p>
+    >Websites are my specialty, but I wouldn't say no to a poster, logo or intro, my guilty pleasures.</p>
     <div class="portofolio-wrapper mb-100">
       <div class="row">
         <div class="column">

@@ -8,7 +8,9 @@ html {
 h3, h4 {
     color: $grey-dark;
 }
-
+a {
+    text-decoration: none;
+}
 p, li {
     color: $grey-medium;
 }
