@@ -4,6 +4,11 @@ export default {
   /*
   ** Headers of the page
   */
+ generate: {
+  routes: [
+    '/contact'
+  ]
+},
   head: {
     title: process.env.npm_package_name || '',
     meta: [
