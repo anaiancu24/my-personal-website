@@ -19,7 +19,7 @@ h3, h4 {
     font-family: $font-roboto;
 }
 
-h1, h2, p, li, a, button, label {
+h1, h2, p, li, a, span, button, label {
     font-family: $font-roboto-mono;
 }
 
@@ -63,7 +63,7 @@ button {
 }
 
 .padding-64 {
-    padding: 64px 0;
+    padding: 44px 0;
 }
 
 .center {
@@ -93,12 +93,12 @@ button {
     }
 
     p {
-        font-size: $font-size-18;
+        font-size: $font-size-16;
         line-height: 2;
     }
 
     li {
-        font-size: $font-size-18;  
+        font-size: $font-size-16;  
     }
 
     .section_50-50 {
