@@ -1,6 +1,6 @@
 <template>
 <div class="call-to-action section-85 mb-100 center">
-    <h4 class="call-to-action_text">Some dummy text here only, should be a question in order to send me a message</h4>
+    <h4 class="call-to-action_text">Do you have any questions or want to work together?</h4>
     <button class="call-to-action_button">Send me a message</button>
 </div>
 </template>
