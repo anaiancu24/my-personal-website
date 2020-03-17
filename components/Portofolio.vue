@@ -1,7 +1,9 @@
 <template>
   <div id="portofolio" class="portofolio section-100 padding-64 center">
     <h3>Some work I've done</h3>
-    <p class="mb-100">Short introduction about the work I'm presenting, from logo to intro to websites</p>
+    <p
+      class="mb-100"
+    >Short introduction about the work I'm presenting, from logo to intro to websites</p>
     <div class="portofolio-wrapper mb-100">
       <div class="row">
         <div class="column">
@@ -9,6 +11,7 @@
           <video style="width:100%" controls>
             <source src="@/static/images/portofolio_intro1.mp4" type="video/mp4" />
           </video>
+        <img src="@/static/images/portofolio_web4.png" style="width:100%" />
         </div>
         <div class="column">
           <img src="@/static/images/portofolio_poster1.jpg" style="width:100%" />

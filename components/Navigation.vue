@@ -43,7 +43,7 @@ export default {
       this.$refs.navigation_menu.classList.toggle("active");
     },
     changeNav() {
-      if (window.scrollY > 830) {
+      if (window.scrollY > 600) {
         this.$refs.nav.classList.add("scroll");
       } else {
         this.$refs.nav.classList.remove("scroll");

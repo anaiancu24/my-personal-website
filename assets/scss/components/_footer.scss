@@ -4,14 +4,13 @@
 .footer {
 
     &-wrapper {
-        @include flex(space-between, normal);
         background-color: $grey-dark;
-        padding: 2rem 5rem;
+        padding: 1rem 5rem;
 
         a ,p, span {
             color: white;
             text-decoration: none;
-            font-size: $font-size-16;
+            font-size: $font-size-12;
         }
 
         &-social {
@@ -28,7 +27,17 @@
         p {
             margin: 0;
             padding: 1rem 0;
+            font-size: $font-size-12;
         }
     }
     
+}
+
+@include desktop {
+    
+    .footer {
+        &-wrapper {
+            @include flex(space-between, normal);
+        }
+    }
 }
