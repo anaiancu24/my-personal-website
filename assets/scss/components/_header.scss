@@ -7,11 +7,11 @@
     background: url('/images/hero.png') no-repeat;
     background-size: cover;
     background-position-x: -200px;
-    height: 600px;
+    height: 450px;
 
     &_text {
         position: relative;
-        top: 220px;
+        top: 200px;
         color:white;
     }
 }
@@ -20,11 +20,7 @@
 
     .header {
         top: -86px;
-        height: 830px;
+        height: 630px;
         background-position-x: 0;
-
-        &_text {
-            top: 370px;
-        }
     }
 }

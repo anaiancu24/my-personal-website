@@ -2,9 +2,9 @@
 @import '../base/variables';
 
 .contact-wrapper {
-    @include flex(space-evenly, center);
     position: relative;
     min-height: 1000px;
+    top: 100px;
 
     .contact-form {
         flex-basis: 30%;
@@ -21,7 +21,7 @@
             }
 
             input, textarea {
-                width: 93%;
+                width: 90%;
                 height: 38px;
                 padding: 0 1rem;
                 color: $grey-medium;
@@ -29,6 +29,11 @@
                 outline:none;
                 border: 1px solid $grey-light;
                 border-radius: 8px;
+                cursor: pointer;
+
+                &:hover, &:focus {
+                    border: 1px solid $mountain-meadow;
+                }
             }
 
             textarea {
@@ -56,5 +61,18 @@
     .contact-text {
         flex-basis: 30%;
         text-align: left;
+    }
+}
+
+@include desktop {
+
+    .contact-wrapper {
+        top: 0;
+        @include flex(space-evenly, center);
+
+        .contact-text {
+            position: relative;
+            top:-200px;
+        }
     }
 }
