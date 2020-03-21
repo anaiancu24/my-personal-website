@@ -2,19 +2,12 @@
 @import '../base/variables';
 
 .navigation {
-    position: absolute;
+    position: fixed;
     top:0;
     z-index: 1;
-    height: 45px;
-
-    &--transparent {
-        background-color: rgba(255, 255, 255, 0.44);
-        transition: background-color 0.4s ease-in-out;
-    }
-    &.scroll {
-        background-color: white;
-        box-shadow: 0 2px 12px 0 #e2eaf6;
-    }
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 2px 12px 0 #e2eaf6;
 
     &_wrapper {
         height: 100%;
@@ -58,7 +51,7 @@
 
             a {
                 text-decoration: none;
-                color: $bottle-green;
+                color: $grey-dark;
                 font-size: $font-size-16;
             }
 
@@ -77,8 +70,16 @@
 @include desktop {
 
     .navigation {
-        position: fixed;
         height: 60px;
+
+        &--transparent {
+            background-color: rgba(255, 255, 255, 0.44);
+            transition: background-color 0.4s ease-in-out;
+        }
+        &.scroll {
+            background-color: white;
+            box-shadow: 0 2px 12px 0 #e2eaf6;
+        }
         
         &_wrapper {
             @include flex(space-between, center);
@@ -100,7 +101,7 @@
                 cursor: pointer;
 
                 a {
-                    color: $bottle-green;
+                    color: $grey-dark;
                 }
 
                 &:last-child {
