@@ -5,7 +5,7 @@
 html {
     scroll-behavior: smooth;
 }
-h3, h4 {
+h1, h2, h3, h4 {
     color: $grey-dark;
 }
 a {
@@ -21,7 +21,7 @@ h3, h4 {
     font-family: $font-roboto;
 }
 
-h1, h2, p, li, a, span, button, label {
+h1, h2, p, li, a, span, button, label , text{
     font-family: $font-roboto-mono;
 }
 
