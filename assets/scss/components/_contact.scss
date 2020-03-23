@@ -77,7 +77,7 @@
     .contact-wrapper {
         min-height: 800px;
         top: 0;
-        @include flex(space-evenly, center);
+        @include flex(space-between, center);
 
         .contact-text {
             position: relative;

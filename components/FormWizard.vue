@@ -1,7 +1,8 @@
 <template>
   <div>
-    <FormData v-if="currentStepNumber === 1"/>
-    <FormMessage v-if="currentStepNumber === 2"/>
+    <FormType v-if="currentStepNumber === 1" @update="processStep"/>
+    <FormData v-if="currentStepNumber === 2" @update="processStep"/>
+    <FormMessage v-if="currentStepNumber === 3" @update="processStep"/>
 
     <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
@@ -26,20 +27,23 @@
 </template>
 
 <script>
+import FormType from './FormType'
 import FormData from './FormData'
 import FormMessage from './FormMessage'
 
 export default {
   name: 'FormWizard',
   components: {
+    FormType,
     FormData,
     FormMessage
   },
   data () {
     return {
       currentStepNumber: 1,
-      length: 2,
+      length: 3,
       form: {
+        type: null,
         firstname: null,
         lastname:null,
         email: null,
@@ -58,7 +62,10 @@ export default {
     },
     goNext () {
       this.currentStepNumber++
-    }
+    },
+    processStep (stepData) {
+      Object.assign(this.form, stepData)
+    },
   }
 }
 </script>
