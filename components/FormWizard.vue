@@ -7,7 +7,8 @@
     <form
   name="ContactFormWizard"
   method="POST"
-  data-netlify="true" netlify>
+  data-netlify="true">
+  <input type="hidden" name="form-name" value="ContactFormWizard" />
   <input name="type" type="hidden" v-model="form.type.description" />
   <input name="firstname" type="hidden" v-model="form.firstname" />
   <input name="lastname" type="hidden" v-model="form.lastname" />
