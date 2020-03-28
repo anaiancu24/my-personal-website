@@ -1,11 +1,21 @@
 <template>
   <div>
-    <form netlify>
     <FormType v-if="currentStepNumber === 1" @update="processStep"/>
     <FormData v-if="currentStepNumber === 2" @update="processStep"/>
     <FormMessage v-if="currentStepNumber === 3" @update="processStep"/>
+
+    <form
+  name="ContactFormWizard"
+  method="POST"
+  data-netlify="true">
+  <input name="type" type="hidden" :value="form.type.description" />
+  <input name="firstname" type="hidden" :value="form.firstname" />
+  <input name="lastname" type="hidden" :value="form.lastname" />
+    <input name="email" type="hidden" :value="form.email" />
+    <input name="message" type="hidden" :value="form.message" />
     <input type="submit" name="Submit" class="btn-submit" v-if="currentStepNumber == 3">
-    </form>
+
+</form>
     <!-- <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
     </div> -->
@@ -44,7 +54,10 @@ export default {
       currentStepNumber: 1,
       length: 3,
       form: {
-        type: null,
+        type: {
+          name:null,
+          description:null
+        },
         firstname: null,
         lastname:null,
         email: null,

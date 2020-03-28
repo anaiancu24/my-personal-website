@@ -8,7 +8,7 @@
       Where should we send your freshly roasted coffee beans?
     </h2> -->
 
-    <form name="ContactStep3" class="form" @input="submit" method="POST" netlify>
+    <form class="form" @input="submit">
       <div class="form-group">
         <textarea v-model="$v.form.message.$model" type="text" placeholder="Write something.." class="form-control" id="message" name="message"></textarea>
         <div v-if="$v.form.message.$error" class="error">field is required</div>
