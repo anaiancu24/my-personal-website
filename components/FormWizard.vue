@@ -13,7 +13,7 @@
   <input name="lastname" type="hidden" v-model="form.lastname" />
     <input name="email" type="hidden" v-model="form.email" />
     <input name="message" type="hidden" v-model="form.message" />
-    <button type="submit" name="Submit" class="btn-submit" v-if="currentStepNumber == 3">Submit</button>
+    <button type="submit" class="btn-submit" v-if="currentStepNumber == 3">Submit</button>
 </form>
     <!-- <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
