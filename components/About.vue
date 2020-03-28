@@ -7,7 +7,7 @@
     <p>I'm open for new projects so if you think you have something challenging, <a href="/contact"><span style="color:#00ff7b">let's have a chat</span></a>!</p> 
 </div>
 <div class="section_50-50_right">
-    <img src="@/static/images/illustration_woman-developer-desk.svg" alt="woman-developer-illustration">
+    <img src="@/static/images/about_me.jpg" alt="woman-developer-illustration">
 </div>
 </div>
 </template>

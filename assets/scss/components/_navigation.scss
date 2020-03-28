@@ -17,6 +17,7 @@
         @include flex(space-between, center);
         position: relative;
         z-index:2;
+        padding-top: 0.7rem;
         
         &-svg {
             width: 90px;
@@ -25,6 +26,11 @@
 
     &_hamburger {
         display: block;
+    }
+
+    &_signature {
+        font-family: 'Caveat', cursive;
+        font-size: $font-size-24;
     }
 
     &_menu {
@@ -71,14 +77,21 @@
 
     .navigation {
         height: 60px;
+        padding-top: 0;
 
         &--transparent {
-            background-color: rgba(255, 255, 255, 0.44);
+            background: radial-gradient(105.59% 29604.11% at 0% 50%, rgba(255, 255, 255, 0) 15.63%, rgba(255, 255, 255, 0) 38.02%, rgba(255, 255, 255, 0.44) 76.46%, rgba(255, 255, 255, 0.44) 80.22%, rgba(255, 255, 255, 0.44) 86.1%, rgba(255, 255, 255, 0.44) 90.68%, rgba(255, 255, 255, 0.44) 94.6%);
             transition: background-color 0.4s ease-in-out;
+            box-shadow: none;
         }
+
         &.scroll {
             background-color: white;
             box-shadow: 0 2px 12px 0 #e2eaf6;
+
+            .navigation_signature {
+                display:block;
+            }
         }
         
         &_wrapper {
@@ -87,6 +100,18 @@
 
         &_hamburger {
             display:none;
+        }
+
+        &_logo {
+            padding-top: 0;
+        }
+
+        &_logo-svg {
+            display:none;
+        }
+
+        &_signature {
+            display: none;
         }
     
         &_menu {

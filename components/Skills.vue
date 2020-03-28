@@ -12,7 +12,7 @@
           <li class="card-list-item" v-for="(listItem, index) in cardInfo.listItems" :key="index">{{listItem}}</li>
         </ul>
         <div class="skills">
-          <div class="skills-item" v-for="(skillItem, index) in cardInfo.skillItems" :key="index">{{skillItem}}</div>
+          <div class="skills-item" v-for="(skillItem, index) in cardInfo.skillItems" :key="index"><span>{{skillItem}}</span></div>
         </div>
       </div>
     </div>
