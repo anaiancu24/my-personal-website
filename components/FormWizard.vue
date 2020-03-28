@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form netlify>
+    <form  name="ContactForm3Steps" method="POST" data-netlify="true" netlify>
     <FormType v-if="currentStepNumber === 1" @update="processStep"/>
     <FormData v-if="currentStepNumber === 2" @update="processStep"/>
     <FormMessage v-if="currentStepNumber === 3" @update="processStep"/>

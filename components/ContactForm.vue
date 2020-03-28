@@ -39,17 +39,7 @@ import FormWizard from './FormWizard';
 export default {
         components: {
           FormWizard
-      },
-  data() {
-    return {
-      form: {
-        firstname: null,
-        lastname: null,
-        email: null,
-        message: null
       }
-    };
-  }
 };
 </script>
 <style lang="scss">
