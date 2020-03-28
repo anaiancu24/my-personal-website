@@ -3,9 +3,10 @@
   <div class="form_steps">
     <span class="form_steps-count"><span class="current-step">1</span>/3</span>
     <h4 class="form_steps-question">Why are you contacting me</h4>
-
+  <form name="ContactStep1" method="POST" netlify>
     <div class="form_steps-types">
       <div
+        :name="selectedType"
         class="type"
         v-for="type in types"
         :key="type.name"
@@ -23,6 +24,8 @@
       </div>
     </div>
     <div v-if="$v.selectedType.$error" class="error">you should pick a plan to continue</div>
+  </form>
+
   </div>
 </template>
 

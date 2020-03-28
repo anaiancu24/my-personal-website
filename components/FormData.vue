@@ -7,27 +7,27 @@
     <h2 class="subtitle">
       Where should we send your freshly roasted coffee beans?
     </h2> -->
-    <!-- <form class="form" @input="submit"> -->
+    <form name="ContactStep2" class="form" @input="submit" method="POST" netlify>
       <div class="form-group-double">
       <div class="form-group">
         <label class="form-label" for="first_name">First name</label>
-        <input v-model="$v.form.firstname.$model" type="text" placeholder="First name" class="form-control" id="first_name">
+        <input v-model="$v.form.firstname.$model" type="text" placeholder="First name" class="form-control" id="first_name" name="firstname">
         <div v-if="$v.form.firstname.$error" class="error">field is required</div>
       </div>
 
       <div class="form-group">
         <label class="form-label" for="last_name">Last name</label>
-        <input v-model="$v.form.lastname.$model" placeholder="Last name" rows="3" class="form-control" id="last_name">
+        <input v-model="$v.form.lastname.$model" placeholder="Last name" rows="3" class="form-control" id="last_name" name="lastname">
         <div v-if="$v.form.lastname.$error" class="error">field is required</div>
       </div>
       </div>
 
       <div class="form-group">
         <label class="form-label" for="address">Email</label>
-        <input v-model="$v.form.email.$model" placeholder="example@example.com" rows="3" class="form-control" id="email">
+        <input v-model="$v.form.email.$model" placeholder="example@example.com" rows="3" class="form-control" id="email" name="email">
         <div v-if="$v.form.email.$error" class="error">field is required</div>
       </div>
-    <!-- </form> -->
+    </form>
   </div>
 </template>
 
