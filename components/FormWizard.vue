@@ -1,45 +1,50 @@
 <template>
   <div>
-    <FormData v-if="currentStepNumber === 1"/>
-    <FormMessage v-if="currentStepNumber === 2"/>
-
-    <div class="progress-bar">
+    <form netlify>
+    <FormType v-if="currentStepNumber === 1" @update="processStep"/>
+    <FormData v-if="currentStepNumber === 2" @update="processStep"/>
+    <FormMessage v-if="currentStepNumber === 3" @update="processStep"/>
+    <input type="submit" name="Submit" class="btn-submit" v-if="currentStepNumber == 3">
+    </form>
+    <!-- <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
-    </div>
+    </div> -->
 
     <!-- Actions -->
-    <div class="buttons">
+    <div class="buttons mt-50">
       <button
         @click="goBack"
         v-if="currentStepNumber > 1"
-        class="btn-outlined"
+        class="btn-back"
       >Back
       </button>
       <button
         @click="goNext"
-        class="btn"
+        v-if="currentStepNumber < 3"
+        class="btn-next"
       >Next</button>
     </div>
-
-    <pre><code>{{form}}</code></pre>
   </div>
 </template>
 
 <script>
+import FormType from './FormType'
 import FormData from './FormData'
 import FormMessage from './FormMessage'
 
 export default {
   name: 'FormWizard',
   components: {
+    FormType,
     FormData,
     FormMessage
   },
   data () {
     return {
       currentStepNumber: 1,
-      length: 2,
+      length: 3,
       form: {
+        type: null,
         firstname: null,
         lastname:null,
         email: null,
@@ -58,7 +63,10 @@ export default {
     },
     goNext () {
       this.currentStepNumber++
-    }
+    },
+    processStep (stepData) {
+      Object.assign(this.form, stepData)
+    },
   }
 }
 </script>

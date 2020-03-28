@@ -2,7 +2,8 @@
   <nav ref="nav" class="navigation navigation--transparent section-100">
     <div class="navigation_wrapper section-85 center">
       <div class="navigation_logo">
-        <img class="navigation_logo-svg" src="@/static/images/logo.svg" alt="logo" />
+        <span class="navigation_signature">Ana-Maria Iancu</span>
+        <!-- <img class="navigation_logo-svg" src="@/static/images/logo.svg" alt="logo" /> -->
         <div class="navigation_hamburger" @click="showNav()">
           <svg
             width="37"
