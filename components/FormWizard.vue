@@ -7,14 +7,13 @@
     <form
   name="ContactFormWizard"
   method="POST"
-  data-netlify="true">
-  <input name="type" type="hidden" :value="form.type.description" />
-  <input name="firstname" type="hidden" :value="form.firstname" />
-  <input name="lastname" type="hidden" :value="form.lastname" />
-    <input name="email" type="hidden" :value="form.email" />
-    <input name="message" type="hidden" :value="form.message" />
-    <input type="submit" name="Submit" class="btn-submit" v-if="currentStepNumber == 3">
-
+  data-netlify="true" netlify>
+  <input name="type" type="hidden" v-model="form.type.description" />
+  <input name="firstname" type="hidden" v-model="form.firstname" />
+  <input name="lastname" type="hidden" v-model="form.lastname" />
+    <input name="email" type="hidden" v-model="form.email" />
+    <input name="message" type="hidden" v-model="form.message" />
+    <button type="submit" name="Submit" class="btn-submit" v-if="currentStepNumber == 3">Submit</button>
 </form>
     <!-- <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
