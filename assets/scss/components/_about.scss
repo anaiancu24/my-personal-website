@@ -6,7 +6,8 @@
     &_right {
 
         img {
-            width: 300px;
+           width: 300px;
+           border-radius:8px
         }
     }
 }
@@ -18,13 +19,6 @@
         &_left {
             text-align: left;
             max-width: 600px;
-        }
-
-        &_right {
-
-            img {
-                width: 600px;
-            }
         }
     }
 }

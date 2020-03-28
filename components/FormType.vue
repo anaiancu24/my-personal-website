@@ -1,27 +1,24 @@
 
 <template>
-  <div>
-    <h1 class="title">Step 1</h1>
+  <div class="form_steps">
+    <span class="form_steps-count"><span class="current-step">1</span>/3</span>
+    <h4 class="form_steps-question">Why are you contacting me</h4>
 
-    <h2 class="subtitle">
-Why are you contacting me    
-</h2>
-
-    <div class="plans">
+    <div class="form_steps-types">
       <div
+        class="type"
         v-for="type in types"
         :key="type.name"
         @click="pickType(type)"
-        :class="{'active-plan': selectedType === type}"
-        class="plan"
+        :class="{'active-type': selectedType === type}"
       >
-        <div class="description">
+        <div class="type--description">
           <span class="title">
               {{type.name}}
           </span>
-          <span class="description">
+          <p class="description">
               {{type.description}}
-          </span>
+          </p>
         </div>
       </div>
     </div>
@@ -37,15 +34,15 @@ Why are you contacting me
         types: [
           {
             name: 'Website',
-            description: 'I would like a website'
+            description: 'Short-term Project'
           },
           {
             name: 'Project',
-            description: 'I would like to work together on a project'
+            description: 'Long-term Project'
           },
           {
             name: 'No reason',
-            description: 'Just wanted to say Hi'
+            description: 'Just to say HI'
           }
         ],
         selectedType: null

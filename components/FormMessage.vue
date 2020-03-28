@@ -1,7 +1,8 @@
 
 <template>
-  <div>
-    <h3 class="title">Step 3</h3>
+  <div class="form_steps">
+  <span class="form_steps-count"><span class="current-step">3</span>/3</span>
+    <h4 class="form_steps-question mb1">Ask me anything</h4>
 <!-- 
     <h2 class="subtitle">
       Where should we send your freshly roasted coffee beans?
@@ -9,7 +10,6 @@
 
     <form class="form" @input="submit">
       <div class="form-group">
-        <label class="form-label" for="message">Your message</label>
         <textarea v-model="$v.form.message.$model" type="text" placeholder="Write something.." class="form-control" id="message"></textarea>
         <div v-if="$v.form.message.$error" class="error">field is required</div>
       </div>

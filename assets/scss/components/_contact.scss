@@ -2,7 +2,7 @@
 @import '../base/variables';
 
 #contact {
-    background: $grey-dark;
+    background: linear-gradient(180deg, #17B890 0%, rgba(255, 255, 255, 0.99) 100%);
 }
 .contact-wrapper {
     position: relative;
@@ -10,15 +10,75 @@
     top: 100px;
 
     .contact-form {
+        min-height: 390px;
         flex-basis: 50%;
         padding: 2rem 1rem;
         background: white;
         box-shadow: -1px 2px 17px 5px rgba(151,152,153,0.7);
         border-radius: 8px;  
 
+        .btn-next {
+            background-color: $cornflower-blue;
+            color: white;
+            padding: 0.5rem 2rem;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .btn-back {
+            border: 1px solid $cornflower-blue;
+            padding: 0.5rem 2rem;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .form_steps {
+
+            &-count {
+                font-size: $font-size-16;
+
+                .current-step {
+                    font-size: $font-size-18;
+                    font-weight: bold;
+                }
+            }
+
+            //STEP 1
+            &-types {
+                @include flex(space-evenly, center);
+
+                .type {
+                    width: 120px;
+                    height:150px;
+                    background: white;
+                    box-shadow: -1px 2px 7px 5px rgba(151,152,153,0.3);
+                    border-radius: 8px;  
+                    padding: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: -1px 2px 17px 5px rgba(151,152,153,0.3);  
+                    }
+                }
+
+                .active-type {
+                    box-shadow: -1px 2px 17px 5px rgba(151,152,153,0.3);
+                    border: 2px solid $cornflower-blue;
+                }
+            }
+        }
+
+        .form-group-double {
+            @include flex(space-between, normal)
+        }
+
         .form-group {
             text-align: left;
-            margin-bottom: 2rem;
+            margin:1rem 0.5rem;
 
             label {
                 margin-bottom: 1rem;
@@ -34,27 +94,31 @@
                 border: 1px solid $grey-light;
                 border-radius: 8px;
                 cursor: pointer;
+                margin-top:0.5rem;
 
                 &:hover, &:focus {
-                    border: 1px solid $mountain-meadow;
+                    border: 1px solid $cornflower-blue;
                 }
+            }
+
+            #email {
+                width:95%;
             }
 
             textarea {
                 height: 160px;
                 padding: 1rem;
+                width: 95%;
             }
         }
-        .submit-button {
+        .btn-submit {
             width: 90%;
+            font-size: $font-size-16;
             background: $mountain-meadow;
             border-radius: 8px;
             padding: 1rem;
             cursor: pointer;
-
-            button {
-                background: none;
-            }
+            border: none;
 
             &:hover {
                 background: $mountain-meadow-hover;
@@ -65,6 +129,7 @@
     .contact-text {
         flex-basis: 30%;
         text-align: left;
+        margin-bottom: 50px;
 
         h3, p {
             color: white;
@@ -75,13 +140,14 @@
 @include desktop {
 
     .contact-wrapper {
-        min-height: 800px;
+        min-height: 700px;
         top: 0;
         @include flex(space-between, center);
 
         .contact-text {
             position: relative;
-            top:-200px;
+            top:-110px;
+            margin-bottom: 0;
         }
 
         .contact-form {

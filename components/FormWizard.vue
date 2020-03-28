@@ -1,28 +1,29 @@
 <template>
   <div>
+    <form netlify>
     <FormType v-if="currentStepNumber === 1" @update="processStep"/>
     <FormData v-if="currentStepNumber === 2" @update="processStep"/>
     <FormMessage v-if="currentStepNumber === 3" @update="processStep"/>
-
-    <div class="progress-bar">
+    <input type="submit" name="Submit" class="btn-submit" v-if="currentStepNumber == 3">
+    </form>
+    <!-- <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
-    </div>
+    </div> -->
 
     <!-- Actions -->
-    <div class="buttons">
+    <div class="buttons mt-50">
       <button
         @click="goBack"
         v-if="currentStepNumber > 1"
-        class="btn-outlined"
+        class="btn-back"
       >Back
       </button>
       <button
         @click="goNext"
-        class="btn"
+        v-if="currentStepNumber < 3"
+        class="btn-next"
       >Next</button>
     </div>
-
-    <pre><code>{{form}}</code></pre>
   </div>
 </template>
 

@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3, h4 {
     color: $grey-dark;
@@ -76,6 +77,13 @@ button {
     margin-bottom: 100px;
 }
 
+.mt-50 {
+    margin-top: 40px;
+}
+
+.mb1 {
+    margin-bottom: 1rem;
+}
 @include desktop {
 
     h1 {
