@@ -8,6 +8,7 @@
       Where should we send your freshly roasted coffee beans?
     </h2> -->
     <!-- <form class="form" @input="submit"> -->
+      <form class="form" @input="submit">
       <div class="form-group-double">
       <div class="form-group">
         <label class="form-label" for="first_name">First name</label>
@@ -27,6 +28,7 @@
         <input v-model="$v.form.email.$model" placeholder="example@example.com" rows="3" class="form-control" id="email">
         <div v-if="$v.form.email.$error" class="error">field is required</div>
       </div>
+          </form>
     <!-- </form> -->
   </div>
 </template>
