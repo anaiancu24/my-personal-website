@@ -2,9 +2,9 @@
   <div class="footer">
     <div class="footer-wrapper">
       <div class="footer-wrapper-nav">
-        <a href>Home |</a>
-        <a href>Portofolio |</a>
-        <a href>Contact</a>
+        <a href="/">Home |</a>
+        <a href="/#portofolio">Portofolio |</a>
+        <a href="/contact">Contact</a>
         <p>
           Email:
           <a href="mailto:ana.iulia24@icloud.com"><span>ana.iulia24@icloud.com</span></a>

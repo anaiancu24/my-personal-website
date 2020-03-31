@@ -10,11 +10,11 @@ export default {
   ]
 },
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Ana-Maria Iancu | Web Deveoper',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Junior Web developer able to build a Web presence from the ground up -- from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web Development.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'images/favicon2.ico' }
