@@ -4,7 +4,12 @@
 .call-to-action {
 
     &_button {
-        @include cta($cornflower-blue, white);
-        padding: 2rem 3rem;
+        @include cta(#1e9cf9, white);
+        padding: 1rem 2rem;
     }
+}
+
+.small {
+    padding: 0.7rem 1.5rem;
+    font-size:16px;
 }

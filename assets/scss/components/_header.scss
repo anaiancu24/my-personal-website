@@ -4,37 +4,31 @@
 .header {
     position: relative;
     top: -50px;
-    background: url('/images/hero_gradient.png') no-repeat;    
+    background-image: url('/images/illustration_ana_memoji.png'); 
+    background-repeat: no-repeat;
     height: 450px;
 
     &_text {
         position: relative;
         top: 180px;
     }
-
-    &_skill-circles {
-        display:none;
-    }
 }
 
 @include desktop {
 
     .header {
-        top: -40px;
-        height: 430px;
-        background-position-x: 0;
-        padding: 250px 0;
+        top:unset;
+        height: 550px;
+        padding: 250px 100px 0;
+        background-position-x: 70%;   
+        background-position-y: 100%;;   
+
 
         &_text {
             width:92vw;
             position: relative;
-            top: 0;
-            text-align: right;
-        }
-
-        &_skill-circles {
-            @include flex(center, center);
-            padding-left: 5%;
+            top: 50px;
+            text-align: left;
         }
     }
 }
