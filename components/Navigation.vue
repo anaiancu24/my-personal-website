@@ -2,7 +2,6 @@
   <nav ref="nav" class="navigation navigation--transparent section-100">
     <div class="navigation_wrapper section-85 center">
       <div class="navigation_logo">
-        <span class="navigation_signature">Ana-Maria Iancu</span>
         <!-- <img class="navigation_logo-svg" src="@/static/images/logo.svg" alt="logo" /> -->
         <div class="navigation_hamburger" @click="showNav()">
           <svg
@@ -28,7 +27,7 @@
         <li class="navigation_menu-item"><nuxt-link :to="`/`">Home</nuxt-link></li>
         <li class="navigation_menu-item"><nuxt-link :to="`/#portofolio`">Portofolio</nuxt-link></li>
         <!-- <li class="navigation_menu-item">Trainings</li> -->
-        <nuxt-link :to="`/contact`"> <li class="navigation_menu-item">Contact me</li></nuxt-link>
+        <nuxt-link :to="`/contact`"> <li class="navigation_menu-item">Contact</li></nuxt-link>
       </ul>
     </div>
   </nav>
@@ -43,24 +42,24 @@ export default {
       this.$store.commit('toggle')
       this.$refs.navigation_menu.classList.toggle("active");
     },
-    changeNav() {
-      if (window.scrollY > 600) {
-        this.$refs.nav.classList.add("scroll");
-      } else {
-        this.$refs.nav.classList.remove("scroll");
-      }
-    }
+    // changeNav() {
+    //   if (window.scrollY > 600) {
+    //     this.$refs.nav.classList.add("scroll");
+    //   } else {
+    //     this.$refs.nav.classList.remove("scroll");
+    //   }
+    // }
   },
-created () {
-    if (process.browser) { 
-        window.addEventListener('scroll', this.changeNav);
-    }
-},
-destroyed () {
-    if (process.browser) { 
-        window.removeEventListener('scroll', this.changeNav);
-    }
-}
+// created () {
+//     if (process.browser) { 
+//         window.addEventListener('scroll', this.changeNav);
+//     }
+// },
+// destroyed () {
+//     if (process.browser) { 
+//         window.removeEventListener('scroll', this.changeNav);
+//     }
+// }
 };
 </script>
 <style lang="scss">

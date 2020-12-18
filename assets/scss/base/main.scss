@@ -17,13 +17,19 @@ p, li {
 }
 body {
     margin: 0;
-}
-h3, h4 {
-    font-family: $font-roboto;
+    overflow-x: hidden;
 }
 
-h1, h2, p, li, a, span, button, label , text{
-    font-family: $font-roboto-mono;
+h3, h4,h2 {
+    font-family: $font-montserrat;
+}
+
+h1 {
+    font-family: $font-open-sans;
+}
+
+p, li, a, span, button, label , text{
+    font-family: $font-open-sans;
 }
 
 h1 {
@@ -57,7 +63,7 @@ button {
 }
 
 .section-85 {
-    width: 85vw;
+    width: 80vw;
 }
 
 .center {
@@ -86,12 +92,14 @@ button {
 }
 @include desktop {
 
-    h1 {
+    h2 {
         font-size: $font-size-64;
+        margin:0;
     }
     
-    h2 {
-        font-size: $font-size-48;
+    h1 {
+        font-size: $font-size-36;
+        font-weight: normal;
     }
     
     h3 {
