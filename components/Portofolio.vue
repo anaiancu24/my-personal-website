@@ -22,7 +22,7 @@
         Your browser does not support the video tag.
         </video>
         <video width="33%" height="auto" autoplay muted>
-          <source src="@/static/images/portofolio_2020.mp4" type="video/mp4">
+          <source src="@/static/images/portofolio_2020_sm.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
             </div>
