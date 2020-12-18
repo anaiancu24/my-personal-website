@@ -2,8 +2,10 @@
 @import '../base/variables';
 
 #contact {
-    background: linear-gradient(180deg, #17B890 0%, rgba(255, 255, 255, 0.99) 100%);
+    background-image: url('/images/gradient_bg.jpg'); 
+    background-size: cover;
 }
+
 .contact-wrapper {
     position: relative;
     min-height: 1100px;
@@ -18,7 +20,7 @@
         border-radius: 8px;  
 
         .btn-next {
-            background-color: $cornflower-blue;
+            background-color: #121212;
             color: white;
             padding: 0.5rem 2rem;
             font-size: 16px;
@@ -28,12 +30,13 @@
         }
 
         .btn-back {
-            border: 1px solid $cornflower-blue;
+            border: 1px solid #121212;
             padding: 0.5rem 2rem;
             font-size: 16px;
             border-radius: 8px;
             cursor: pointer;
             outline: none;
+            background:white;
         }
 
         .form_steps {
@@ -116,17 +119,13 @@
             }
         }
         .btn-submit {
-            width: 90%;
             font-size: $font-size-16;
-            background: $mountain-meadow;
+            background: #121212;
             border-radius: 8px;
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             cursor: pointer;
             border: none;
-
-            &:hover {
-                background: $mountain-meadow-hover;
-            }
+            color:white;
         }
     }
 
