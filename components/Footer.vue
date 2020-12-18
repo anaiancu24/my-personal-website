@@ -3,7 +3,7 @@
     <div class="footer-wrapper">
       <div class="footer-wrapper-nav">
         <a href="/">Home |</a>
-        <a href="/#portofolio">Portofolio |</a>
+        <a href="/#portofolio">Portfolio |</a>
         <a href="/contact">Contact</a>
         <p>
           Email:

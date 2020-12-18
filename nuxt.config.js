@@ -14,7 +14,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+
       { hid: 'description', name: 'description', content: 'Web developer able to build a Web presence from the ground up -- from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web Development.' }
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'images/favicon2.ico' }

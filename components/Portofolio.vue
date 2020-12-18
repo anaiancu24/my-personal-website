@@ -1,6 +1,6 @@
 <template>
   <div id="portofolio" class="portofolio section-100 padding-64 center">
-    <h3>Portofolio</h3>
+    <h3>Portfolio</h3>
     <div class="portofolio-wrapper mb-100">
       <div class="button-toggle-container">
         <button @click="showWebDev" :class="{'selected' : webDev}" class="button-toggle">Web Development</button>
