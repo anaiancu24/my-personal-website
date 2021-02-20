@@ -1,6 +1,18 @@
 @import '../base/mixins';
 @import '../base/variables';
 
+.skills {
+    @include flex(center, center);
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    font-size: $font-size-12;
+    padding:0.75rem;
+    background: #DDA6F8;
+    border-radius: $border-radius-65;
+    margin: 0.5rem;
+}
 .section-cards {
 
     &_wrapper {
@@ -34,18 +46,8 @@
         }
 
         .skills {
-            @include flex(center, center);
-            flex-wrap: wrap;
             position: absolute;
             bottom:16px;
-
-            &-item {
-                font-size: $font-size-12;
-                padding:0.75rem;
-                background: #DDA6F8;
-                border-radius: $border-radius-65;
-                margin: 0.5rem;
-            }
         }
     }
 }

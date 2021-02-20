@@ -9,17 +9,16 @@
             height="25"
             viewBox="0 0 29 27"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect y="20" width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect y="20" width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect y="20" width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect y="10" width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect y="10" width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
-            <rect y="10" width="35" height="5" rx="3.5" fill="rgb(0, 255, 123)" />
+            <rect width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect y="20" width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect y="20" width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect y="20" width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect y="10" width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect y="10" width="35" height="5" rx="3.5" fill="#1e9cf9" />
+            <rect y="10" width="35" height="5" rx="3.5" fill="#1e9cf9" />
           </svg>
         </div>
       </div>

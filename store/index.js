@@ -5,8 +5,8 @@ export const state = () => ({
         title: 'Hard Skills',
         image: 'images/illustration_skills1.svg',
         imageAlt: 'web-developer',
-        listItems: ['Able to build a website from the ground up using modern frameworks', 'Proficiency in creating websites using Wordpress and Wix', 'Able to create stylish posters, logos, business cards and modern intros', 'Knowledge working in Salesforce Community Builder and Customization and Hubspot'],
-        skillItems: ['HTML', 'CSS', 'SASS', 'Javascript', 'Vue.js', 'React.js', 'PHP', 'SQL', 'Node.js', 'REST API']
+        listItems: ['Able to build a website from the ground up using modern frameworks', 'Proficiency in creating websites using Wordpress and Wix', 'An eye for design with focus on animation and interaction.', 'Knowledge working in Salesforce Community Builder and Customization and Hubspot'],
+        skillItems: ['HTML', 'CSS', 'SASS', 'Javascript', 'Vue.js', 'React.js', 'PHP', 'SQL', 'Node.js', 'REST API', 'GIT']
       },
       {
         title: 'Soft skills',

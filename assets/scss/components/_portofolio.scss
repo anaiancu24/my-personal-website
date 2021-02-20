@@ -2,20 +2,23 @@
 @import '../base/variables';
 
 .portofolio {
+  padding:20px;
+  max-width:320px;
 
     &-wrapper {
       display:flex;
       justify-content: center;
       align-items: center;
+      margin:0 auto;
 
       .button-toggle-container {
         display:flex;
         justify-content: center;
         align-items: center;
-        width: max-content;
         background-color: white;
         box-shadow: 0 2px 12px 0 #e2eaf6;
         border-radius:8px;
+        flex-wrap: wrap;
 
         .button-toggle {
           border-radius:8px;
@@ -25,10 +28,11 @@
           padding:16px 20px;
           outline:none;
           cursor: pointer;
+          flex-basis: 50%;
         }
 
         .selected {
-          background: #4DD7F5;
+          background: #1e9cf9;
           color:white;
         }
       }
@@ -39,43 +43,104 @@
         flex-wrap: wrap;
         padding: 0 4px;
       }
-      
-      /* Create four equal columns that sits next to each other */
-      .column {
-        -ms-flex: 32%; /* IE10 */
-        flex: 32%;
-        max-width: 32%;
-        padding: 0 4px;
-      }
-      
-      .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-      }
 
-      .column video {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-      }
+            /* Create four equal columns that sits next to each other */
+            .column {
+              -ms-flex: 32%; /* IE10 */
+              flex: 32%;
+              max-width: 32%;
+              padding: 0 4px;
+            }
+            
+            .column img {
+              margin-top: 8px;
+              vertical-align: middle;
+              width: 100%;
+            }
       
-      /* Responsive layout - makes a two column-layout instead of four columns */
-      @media screen and (max-width: 800px) {
-        .column {
-          -ms-flex: 50%;
-          flex: 50%;
-          max-width: 50%;
-        }
-      }
-      
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column {
-          -ms-flex: 100%;
-          flex: 100%;
-          max-width: 100%;
-        }
+            .column video {
+              margin-top: 8px;
+              vertical-align: middle;
+              width: 100%;
+            }
+            
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+              .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+              }
+            }
+            
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+              }
+            }
+    }
+
+    &-item {
+      .booksmart-gif {
+        max-width:300px;;
       }
     }
+
+    .chrome-store-img {
+      width:200px;
+    }
+}
+
+@include desktop {
+
+  .portofolio {
+    padding:0;
+    max-width: unset;
+
+    &-item {
+      .booksmart-gif {
+        max-width:1000px;
+      }
+    }
+    &-wrapper {
+
+      .button-toggle-container {
+        width: max-content;
+
+        .button-toggle {
+          flex-basis: unset;
+        }
+      }
+    }  
+
+    .section_50-50 {
+      padding:0;
+      justify-content: center;
+
+      img {
+        height:500px;
+      }
+
+      .content {
+        width:80%;
+        text-align: left;
+        margin:0 auto;
+      }
+      .frontend3 {
+        width:500px;
+      }
+    }
+    .skillshare-pres {
+      max-width: 1000px;
+      margin:100px auto;
+
+      img {
+        max-width: 1000px;
+      }
+    }
+
+  }
 }
