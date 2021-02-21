@@ -81,6 +81,11 @@
                 max-width: 100%;
               }
             }
+
+
+    .frontend3 {
+      max-width:300px;
+    }
     }
 
     &-item {
@@ -91,6 +96,20 @@
 
     .chrome-store-img {
       width:200px;
+    }
+
+    .skillshare-pres {
+
+      img {
+        max-width: 300px;
+      }
+    }
+    .section_50-50 {
+      padding:0;
+
+      img {
+        height:300px;
+      }
     }
 }
 
@@ -129,10 +148,12 @@
         text-align: left;
         margin:0 auto;
       }
-      .frontend3 {
-        width:500px;
-      }
     }
+
+    .frontend3 {
+      max-width:800px;
+    }
+
     .skillshare-pres {
       max-width: 1000px;
       margin:100px auto;

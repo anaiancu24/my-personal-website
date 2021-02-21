@@ -84,7 +84,7 @@
     <div class="footer-copyright-wrapper center">
       <p>
         Developed by Ana-Maria Iancu
-        <span>2020</span>
+        <span>2021</span>
       </p>
     </div>
   </div>

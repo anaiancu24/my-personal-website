@@ -9,7 +9,6 @@
 .contact-wrapper {
     position: relative;
     min-height: 1100px;
-    top: 100px;
 
     .contact-form {
         min-height: 390px;
@@ -53,6 +52,8 @@
             //STEP 1
             &-types {
                 @include flex(space-evenly, center);
+                flex-wrap: wrap;
+                margin-bottom:20px;
 
                 .type {
                     width: 120px;
@@ -79,9 +80,7 @@
             }
         }
 
-        .form-group-double {
-            @include flex(space-between, normal)
-        }
+
 
         .form-group {
             text-align: left;
@@ -92,7 +91,7 @@
             }
 
             input, textarea {
-                width: 90%;
+                //width: 90%;
                 height: 38px;
                 padding: 0 1rem;
                 color: $grey-medium;
@@ -108,14 +107,9 @@
                 }
             }
 
-            #email {
-                width:95%;
-            }
-
             textarea {
                 height: 160px;
                 padding: 1rem;
-                width: 95%;
             }
         }
         .btn-submit {
@@ -154,6 +148,14 @@
         }
 
         .contact-form {
+
+            input {
+                width: 90%;
+            }    
+
+            textarea {
+                width: 94%;
+            } 
 
             .form-group-double {
                 @include flex(space-evenly, normal)

@@ -8,15 +8,15 @@
           :class="{ selected: frontend }"
           class="button-toggle"
         >
-          Frontend
+          Web Development
         </button>
-        <button
+        <!-- <button
           @click="showBackend"
           :class="{ selected: backend }"
           class="button-toggle"
         >
           Backend
-        </button>
+        </button> -->
         <button
           @click="showChromeExt"
           :class="{ selected: chromeExt }"
@@ -35,6 +35,33 @@
     </div>
     <div class="portofolio-wrapper">
       <div v-if="frontend" class="portofolio-items">
+        <div class="mb-50" style="background: none">
+          <div class="section_50-50-right">
+            <div class="content">
+              <h4>Flexible, reusable and long-lasting solutions</h4>
+              <p>
+                Focused on creating and building solutions that offer a great
+                user experience and increase the conversion rates.
+              </p>
+              <div class="skills">
+                <p>Stack and tools used:</p>
+                <div class="skills-item"><span>HTML</span></div>
+                <div class="skills-item"><span>SASS</span></div>
+                <div class="skills-item"><span>Javascript</span></div>
+                <div class="skills-item"><span>Vue.js</span></div>
+                <div class="skills-item"><span>Ajax</span></div>
+                <div class="skills-item"><span>PHP</span></div>
+                <div class="skills-item"><span>Hubspot integration</span></div>
+                <div class="skills-item"><span>REST API</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="section_50-50-left">
+            <video class="frontend3" muted autoplay>
+              <source src="@/static/images/frontend_3.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
         <div class="section_50-50" style="background: none">
           <div class="section_50-50-left">
             <img src="@/static/images/frontend_1.gif" />
@@ -76,33 +103,6 @@
           </div>
           <div class="section_50-50-right">
             <img src="@/static/images/frontend_2.gif" />
-          </div>
-        </div>
-        <div class="section_50-50" style="background: none">
-          <div class="section_50-50-left">
-            <video class="frontend3" muted autoplay>
-              <source src="@/static/images/frontend_3.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="section_50-50-right">
-            <div class="content">
-              <h4>Flexible, reusable and long-lasting solutions</h4>
-              <p>
-                Focused on creating and building solutions that offer a great
-                user experience and increase the conversion rates.
-              </p>
-              <div class="skills">
-                <p>Stack and tools used:</p>
-                <div class="skills-item"><span>HTML</span></div>
-                <div class="skills-item"><span>SASS</span></div>
-                <div class="skills-item"><span>Javascript</span></div>
-                <div class="skills-item"><span>Vue.js</span></div>
-                <div class="skills-item"><span>Ajax</span></div>
-                <div class="skills-item"><span>PHP</span></div>
-                <div class="skills-item"><span>Hubspot integration</span></div>
-                <div class="skills-item"><span>REST API</span></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -193,13 +193,19 @@
     </div>
     <div class="skillshare-pres">
       <h3>Web Fundamentals everyone should know</h3>
-      <p>This 30 min course covers the bare-bone-basics of HTML, CSS and SEO code optimisation.
-<br>I recommend it to anyone who works with websites, blogs, landing pages , but doesn’t want to go too much in depth. I only go through the web concepts that everyone should know these days.
-<br>Enjoy!
-</p>
-<a href="https://www.skillshare.com/r/profile/Ana-Maria-Iancu/525218" target="_blank">
-  <img src="@/static/images/skillshare.png" />
-</a>
+      <p>
+        This 30 min course covers the bare-bone-basics of HTML, CSS and SEO code
+        optimisation. <br />I recommend it to anyone who works with websites,
+        blogs, landing pages , but doesn’t want to go too much in depth. I only
+        go through the web concepts that everyone should know these days.
+        <br />Enjoy!
+      </p>
+      <a
+        href="https://www.skillshare.com/r/profile/Ana-Maria-Iancu/525218"
+        target="_blank"
+      >
+        <img src="@/static/images/skillshare.png" />
+      </a>
     </div>
   </div>
 </template>
